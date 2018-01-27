@@ -1,0 +1,9 @@
+- shell:
+    - [git submodule update --init --recursive, Installing submodules]
+
+- link:
+    ~/.zshrc_local:
+        relink: true
+        path: zshrc_local
+
+- clean: ['~']
