@@ -16,3 +16,5 @@ alias tunnel_apache_denver='echo '\''Connecting to denver...'\'';ssh -Nf vincent
 # Go Version Manager
 [ -s ~/.gvm/scripts/gvm ] && source ~/.gvm/scripts/gvm
 
+# Yarn
+export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
