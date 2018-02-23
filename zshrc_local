@@ -12,3 +12,7 @@ alias tunnel_mysql_tresbadc19='echo '\''Connecting to tresbadc19...'\'';ssh -Nf 
 alias tunnel_mysql_sesmavaltcv01='echo '\''Connecting to sesmavaltcv01...'\'';ssh -Nf vicente.espejo@sesmavaltcv01 -L 3310:127.0.0.1:3306'
 alias tunnel_mysql_denver='echo '\''Connecting to denver...'\'';ssh -Nf vincente@denver -L 3308:127.0.0.1:3306'
 alias tunnel_apache_denver='echo '\''Connecting to denver...'\'';ssh -Nf vincente@denver -L 172.19.115.171:9080:localhost:80'
+
+# Go Version Manager
+[ -s ~/.gvm/scripts/gvm ] && source ~/.gvm/scripts/gvm
+
