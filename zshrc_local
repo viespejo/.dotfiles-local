@@ -13,8 +13,14 @@ alias tunnel_mysql_sesmavaltcv01='echo '\''Connecting to sesmavaltcv01...'\'';ss
 alias tunnel_mysql_denver='echo '\''Connecting to denver...'\'';ssh -Nf vincente@denver -L 3308:127.0.0.1:3306'
 alias tunnel_apache_denver='echo '\''Connecting to denver...'\'';ssh -Nf vincente@denver -L 172.19.115.171:9080:localhost:80'
 
+# docker alias
+alias docker="sudo docker"
+
 # Go Version Manager
 [ -s ~/.gvm/scripts/gvm ] && source ~/.gvm/scripts/gvm
 
 # Yarn
 export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
+
+# Node from NVM (in order not to load NVM script)
+export PATH="$HOME/.nvm/versions/node/v9.6.1/bin:$PATH"
