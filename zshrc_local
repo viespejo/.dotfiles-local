@@ -12,9 +12,11 @@ alias tunnel_mysql_tresbadc19='echo '\''Connecting to tresbadc19...'\'';ssh -Nf 
 alias tunnel_mysql_sesmavaltcv01='echo '\''Connecting to sesmavaltcv01...'\'';ssh -Nf vicente.espejo@sesmavaltcv01 -L 3310:127.0.0.1:3306'
 alias tunnel_mysql_denver='echo '\''Connecting to denver...'\'';ssh -Nf vincente@denver -L 3308:127.0.0.1:3306'
 alias tunnel_apache_denver='echo '\''Connecting to denver...'\'';ssh -Nf vincente@denver -L 172.19.115.171:9080:localhost:80'
+alias tunnel_mysql_tresbadc19new='echo '\''Connecting to tresbadc19new...'\'';ssh -Nf devadmin@tresbadc19new -L 3311:127.0.0.1:3306'
 
 # docker alias
 alias docker="sudo docker"
+alias docker-compose="sudo docker-compose"
 
 # Go Version Manager
 [ -s ~/.gvm/scripts/gvm ] && source ~/.gvm/scripts/gvm
@@ -23,5 +25,5 @@ alias docker="sudo docker"
 export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
 
 # Node from NVM (in order not to load NVM script)
-export PATH="$HOME/.nvm/versions/node/v11.0.0/bin:$PATH"
+export PATH="$HOME/.nvm/versions/node/v11.11.0/bin:$PATH"
 alias nvm_load='export NVM_DIR="$HOME/.nvm" && \. "$NVM_DIR/nvm.sh" && \. "$NVM_DIR/bash_completion"'
