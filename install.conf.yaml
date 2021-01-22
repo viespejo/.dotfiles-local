@@ -2,9 +2,4 @@
     - [git submodule update --init --recursive, Installing submodules]
     - [rsync -va remmina/ ~/.local/share/remmina/, Sync "~/.local/share/remmina" folder]
 
-- link:
-    ~/.zshrc_local:
-        relink: true
-        path: zshrc_local
-
 - clean: ['~']
