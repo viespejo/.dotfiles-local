@@ -16,6 +16,7 @@ alias tunnel_mysql_tresbadc19new='echo '\''Connecting to tresbadc19new...'\'';ss
 alias tunnel_mysql_sitmivgcntct03='echo '\''Connecting to sitmivgcntct03...'\'';ssh -Nf admin_gocontact@sitmivgcntct03 -L 3312:127.0.0.1:3306'
 alias tunnel_mysql_susl3vgcntct01='echo '\''Connecting to susl3vgcntct01...'\'';ssh -Nf localadmin@susl3vgcntct01 -L 3313:127.0.0.1:3306'
 alias tunnel_mysql_sesmavweb01='echo '\''Connecting to sesmavweb01...'\'';ssh -Nf its32ve1@sesmavweb01 -L 3314:127.0.0.1:3306'
+alias tunnel_mysql_tttserver='echo '\''Connecting to tttserver(SUSL3VACWEB01)...'\'';ssh -Nf tttserver -L 3315:127.0.0.1:3306'
 
 # docker alias
 alias docker="sudo docker"
@@ -29,4 +30,14 @@ export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
 
 # Node from NVM (in order not to load NVM script)
 export PATH="$HOME/.nvm/versions/node/v12.16.2/bin:$PATH"
-alias nvm_load='export NVM_DIR="$HOME/.nvm" && \. "$NVM_DIR/nvm.sh" && \. "$NVM_DIR/bash_completion"'
+# Rust
+# . "$HOME/.cargo/env"
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '/home/its32ve1/google-cloud-sdk/path.zsh.inc' ]; then . '/home/its32ve1/google-cloud-sdk/path.zsh.inc'; fi
+# The next line enables shell command completion for gcloud.
+if [ -f '/home/its32ve1/google-cloud-sdk/completion.zsh.inc' ]; then . '/home/its32ve1/google-cloud-sdk/completion.zsh.inc'; fi
+# TREX variables
+if [ -f '/home/its32ve1/Data/code/trex/t-rex-env-zshrc.sh' ]; then . '/home/its32ve1/Data/code/trex/t-rex-env-zshrc.sh'; fi
+# alias nvm_load='export NVM_DIR="$HOME/.nvm" && \. "$NVM_DIR/nvm.sh" && \. "$NVM_DIR/bash_completion"'
+export NVM_DIR="$HOME/.nvm" && \. "$NVM_DIR/nvm.sh" && \. "$NVM_DIR/bash_completion"
+
