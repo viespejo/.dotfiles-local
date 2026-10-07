@@ -36,7 +36,8 @@ export PATH="/usr/local/go/bin:$HOME/go/bin:$PATH"
 # Node from NVM (in order not to load NVM script)
 # export PATH="/home/its32ve1/.nvm/versions/node/v16.16.0/bin:$PATH"
 # export PATH="/home/its32ve1/.nvm/versions/node/v20.9.0/bin:$PATH"
-export PATH="/home/its32ve1/.nvm/versions/node/v22.17.0/bin:$PATH"
+# export PATH="/home/its32ve1/.nvm/versions/node/v22.17.0/bin:$PATH"
+export PATH="/home/its32ve1/.nvm/versions/node/v24.15.0/bin:$PATH"
 #export NVM_DIR="$HOME/.nvm" && \. "$NVM_DIR/nvm.sh" && \. "$NVM_DIR/bash_completion"
 export NVM_DIR="$HOME/.nvm"
 #[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
