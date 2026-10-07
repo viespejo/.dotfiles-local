@@ -19,8 +19,8 @@ alias tunnel_mysql_sesmavweb01='echo '\''Connecting to sesmavweb01...'\'';ssh -N
 alias tunnel_mysql_tttserver='echo '\''Connecting to tttserver(SUSL3VACWEB01)...'\'';ssh -Nf tttserver -L 3315:127.0.0.1:3306'
 
 # docker alias
-alias docker="sudo docker"
-alias docker-compose="sudo docker-compose"
+# alias docker="sudo docker"
+# alias docker-compose="sudo docker-compose"
 
 # .local/bin to PATH
 export PATH="/home/its32ve1/.local/bin:$PATH"
@@ -56,7 +56,7 @@ if [ -f '/home/its32ve1/google-cloud-sdk/completion.zsh.inc' ]; then . '/home/it
 # if [ -f '/home/its32ve1/code/trex/t-rex-env-zshrc.sh' ]; then . '/home/its32ve1/code/trex/t-rex-env-zshrc.sh'; fi
 
 # EmployeeX variables
-if [ -f '/home/its32ve1/code/employeex/env.sh' ]; then . '/home/its32ve1/code/employeex/env.sh'; fi
+# if [ -f '/home/its32ve1/code/employeex/env.sh' ]; then . '/home/its32ve1/code/employeex/env.sh'; fi
 
 # temp before kubectl v1.26 after that it is not needed
 export USE_GKE_GCLOUD_AUTH_PLUGIN=True
@@ -70,11 +70,11 @@ export AIDER_DARK_MODE=true
 # gh extension for copilot cli
 # yay -Sy github-cli
 # gh extension install github/gh-copilot 
-alias copilot='gh copilot'
-alias '?'='copilot explain'
-alias '??'='copilot suggest -t shell'
-alias 'git?'='copilot suggest -t git'
-alias 'gh?'='copilot suggest -t gh'
+# alias copilot='gh copilot'
+# alias '?'='copilot explain'
+# alias '??'='copilot suggest -t shell'
+# alias 'git?'='copilot suggest -t git'
+# alias 'gh?'='copilot suggest -t gh'
 
 # davinci-resolve
 export PATH="$PATH:/opt/resolve/bin"
@@ -100,6 +100,5 @@ function y() {
 	fi
 	rm -f -- "$tmp"
 }
-
-# custom config
-[ -f ~/.zcustom ] && source ~/.zcustom
+alias chrome-luna='google-chrome-stable --gpu-acceleration --user-data-dir="/home/its32ve1/.config/.chrome-luna" --disable-default-apps --no-first-run --no-default-browser-check --disable-sync https://luna.amazon.com'
+alias chrome-luna-debugging='google-chrome-stable --gpu-acceleration --enable-features=AcceleratedVideoDecodeLinuxGL,VaapiVideoDecoder,VaapiIgnoreDriverChecks --use-gl=angle --use-angle=gl --user-data-dir="/home/its32ve1/.config/.chrome-luna" --disable-default-apps --no-first-run --no-default-browser-check --disable-sync https://luna.amazon.com'
